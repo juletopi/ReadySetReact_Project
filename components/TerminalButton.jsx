@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: {
-        fontFamily: 'monospace',
+        fontFamily: 'RobotoMono_700Bold',
         color: '#69eb40',
         fontSize: 16,
         letterSpacing: 1.5,
@@ -85,9 +85,10 @@ const styles = StyleSheet.create({
     textPressed: {
         color: '#000',
         textShadowRadius: 0,
+        fontFamily: 'RobotoMono_700Bold',
     },
     cursor: {
-        fontFamily: 'monospace',
+        fontFamily: 'RobotoMono_700Bold',
         color: '#69eb40',
         fontSize: 18,
         marginLeft: 5,

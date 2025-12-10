@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
         marginTop: 80,
     },
     asciiTitle: {
-        fontFamily: 'monospace',
+        fontFamily: 'RobotoMono_400Regular',
         fontSize: 12,
         color: '#39FF14',
         textShadowColor: '#00ff99',

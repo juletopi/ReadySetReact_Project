@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end',
     },
     hudText: {
-        fontFamily: 'monospace',
+        fontFamily: 'RobotoMono_400Regular',
         color: '#39FF14',
         fontSize: 10,
         opacity: 0.8,
@@ -91,9 +91,10 @@ const styles = StyleSheet.create({
     },
     variableText: {
         color: '#aaffaa',
+        fontFamily: 'RobotoMono_700Bold',
     },
     staticText: {
-        fontFamily: 'monospace',
+        fontFamily: 'RobotoMono_400Regular',
         color: '#1a4d2e',
         fontSize: 10,
         letterSpacing: -1,

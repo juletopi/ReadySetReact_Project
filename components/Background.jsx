@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#000',
+        fontFamily: 'RobotoMono_400Regular',
     },
     contentContainer: {
         flex: 1,
