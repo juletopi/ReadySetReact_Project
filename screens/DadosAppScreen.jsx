@@ -142,7 +142,7 @@ export default function DadosAppScreen({ navigation }) {
     return (
         <Background>
             <View style={styles.container}>
-                <Text style={styles.headerTitle}>{'< DADOS_DO_APP />'}</Text>
+                <Text style={styles.headerTitle}>{'< APP_DATA />'}</Text>
 
                 <ScrollView
                     style={styles.scrollView}

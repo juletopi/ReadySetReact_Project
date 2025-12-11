@@ -26,9 +26,9 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-                <Stack.Screen name="IniciarSistema" component={IniciarSistema} options={{ headerShown: false }} />
-                <Stack.Screen name="DadosApp" component={DadosAppScreen} options={{ headerShown: false }} />
+                <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false, title: '< SYSTEM_ROOT />' }} />
+                <Stack.Screen name="IniciarSistema" component={IniciarSistema} options={{ headerShown: false, title: '< EXEC_GAME />' }} />
+                <Stack.Screen name="DadosApp" component={DadosAppScreen} options={{ headerShown: false, title: '< APP_DATA />' }} />
             </Stack.Navigator>
         </NavigationContainer>
     );

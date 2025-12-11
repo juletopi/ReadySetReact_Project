@@ -1,0 +1,1 @@
+> Lógica básica do jogo será implementada aqui.
