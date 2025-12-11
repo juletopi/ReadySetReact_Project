@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import IniciarSistema from './screens/IniciarSistema';
 import DadosAppScreen from './screens/DadosAppScreen';
-import GameManager from './src/game/GameManager';
+// import GameManager from './src/game/GameManager';
 
 const Stack = createNativeStackNavigator();
 

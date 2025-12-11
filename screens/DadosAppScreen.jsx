@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Linking } from 'react-native';
 import Background from '../components/Background';
 import TerminalButton from '../components/TerminalButton';
 
@@ -138,6 +138,29 @@ const SectionTitle = ({ title }) => (
     </View>
 );
 
+const SocialCommand = ({ linkedin, github }) => {
+    const handleLink = (url) => {
+        Linking.openURL(url).catch((err) => console.error("Erro ao abrir link:", err));
+    };
+
+    return (
+        <View style={styles.socialContainer}>
+            <Text style={styles.socialLabel}>$ CONECTAR:</Text>
+            <View style={styles.socialButtonsRow}>
+                <TouchableOpacity onPress={() => handleLink(linkedin)}>
+                    <Text style={styles.socialLink}>[ LINKEDIN ]</Text>
+                </TouchableOpacity>
+                
+                <Text style={styles.separator}>::</Text>
+                
+                <TouchableOpacity onPress={() => handleLink(github)}>
+                    <Text style={styles.socialLink}>[ GITHUB ]</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+    );
+};
+
 export default function DadosAppScreen({ navigation }) {
     return (
         <Background>
@@ -151,7 +174,7 @@ export default function DadosAppScreen({ navigation }) {
                 >
                     <SectionTitle title="SOBRE_O_SISTEMA" />
                     <Text style={styles.descriptionText}>
-                        O "ReadySetReact" é um projeto em React Native, criado para ensinar conceitos fundamentais de React Native de gamificada.
+                        O "ReadySetReact" é um projeto em React Native, criado para ensinar conceitos fundamentais de React Native de forma gamificada.
                         {'\n\n'}
                         A inspiração veio do Flexbox Froggy, um website que propõe desafios e atividades de programação. E de forma semelhante, o "ReadySetReact" tem o objetivo de ensinar os principais recursos do React Native, como navegação, componentes, estilos, animações e lógica de interface.
                         {'\n\n'}
@@ -159,7 +182,7 @@ export default function DadosAppScreen({ navigation }) {
                     </Text>
 
                     <SectionTitle title="DEV_TEAM_ACCESS" />
-                    <Text style={styles.warningText}>// CARREGANDO PERFIS DA EQUIPE...</Text>
+                    <Text style={styles.warningText}>// CARREGANDO PERFIS...</Text>
 
                     <View style={styles.devCard}>
                         <View style={styles.asciiFrame}>
@@ -169,20 +192,34 @@ export default function DadosAppScreen({ navigation }) {
                         <DataRow label="CODENAME" value="Juletopi" />
                         <DataRow label="FUNÇÃO" value="UI/Front-End" />
                         <Text style={styles.devBio}>
-                            ༝ Responsável pela interface visual, estruturação do layout e experiência do usuário.
+                            ༝ Responsável pela interface visual, estruturação do layout e UI/UX. 
+                            {'\n'}
+                            Tá vendo todas essas firulas no estilo de terminal alá Fallout? Eu que fiz.
                         </Text>
+                        
+                        <SocialCommand 
+                            linkedin="https://www.linkedin.com/in/julio-cezar-pereira-camargo/"
+                            github="https://github.com/juletopi"
+                        />
                     </View>
 
                     <View style={styles.devCard}>
                         <View style={styles.asciiFrame}>
                             <Text style={styles.asciiArt}>{AMANDA_ASCII}</Text>
                         </View>
-                        <DataRow label="DEV_ID" value="Amanda Rangel" />
+                        <DataRow label="DEV_ID" value="Amanda Rangel Marchiori" />
                         <DataRow label="CODENAME" value="ARM" />
                         <DataRow label="FUNÇÃO" value="Back-End / Lógica" />
                         <Text style={styles.devBio}>
-                            ༝ Responsável pela lógica dos desafios gamificados, estruturação dos dados e regras do jogo.
+                            ༝ Responsável pela lógica dos desafios do jogo e estruturação dos dados. 
+                            {'\n'}
+                            Sou eu quem tive a ideia do jogo que nem do Flexbox Froggy!
                         </Text>
+                        
+                        <SocialCommand 
+                            linkedin="https://www.linkedin.com/in/amanda-rangel-marchiori-arm30102022/"
+                            github="https://github.com/rangelmarchiori"
+                        />
                     </View>
 
                     <SectionTitle title="SYS_INFO" />
@@ -315,8 +352,38 @@ const styles = StyleSheet.create({
         color: '#aaffaa',
         fontSize: 11,
         marginTop: 8,
+        marginBottom: 12,
         fontStyle: 'italic',
         opacity: 0.8,
+    },
+    socialContainer: {
+        marginTop: 10,
+        borderTopWidth: 1,
+        borderTopColor: '#1a4d2e',
+        paddingTop: 8,
+        alignItems: 'flex-start',
+    },
+    socialLabel: {
+        fontFamily: 'RobotoMono_700Bold',
+        color: '#1a4d2e',
+        fontSize: 10,
+        marginBottom: 5,
+    },
+    socialButtonsRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    socialLink: {
+        fontFamily: 'RobotoMono_700Bold',
+        color: '#39FF14',
+        fontSize: 12,
+        textShadowColor: '#39FF14',
+        textShadowRadius: 5,
+    },
+    separator: {
+        fontFamily: 'RobotoMono_400Regular',
+        color: '#1a4d2e',
+        marginHorizontal: 10,
     },
     footer: {
         width: '100%',
