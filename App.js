@@ -4,7 +4,6 @@ import { ActivityIndicator, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
-import IniciarSistema from './screens/IniciarSistema';
 import DadosAppScreen from './screens/DadosAppScreen';
 import GameManager from './game/GameManager';
 

@@ -14,7 +14,6 @@ export default function GameManager({ navigation }) {
     const currentLevel = levels[levelIndex];
 
     useEffect(() => {
-        // Verifica a resposta ignorando maiúsculas/minúsculas
         if (userInput.trim().toLowerCase() === currentLevel.correctAnswer.toLowerCase()) {
             setIsCorrect(true);
         } else {
@@ -47,19 +46,17 @@ export default function GameManager({ navigation }) {
                         </Text>
                     </View>
 
-                    {/* Componente Visual que muda conforme o acerto */}
                     <VisualResult type={currentLevel.type} isCorrect={isCorrect} />
 
                     <View style={styles.questionContainer}>
                         <Text style={styles.questionText}>
-                            > {currentLevel.question}
+                            ༝ {currentLevel.question}
                         </Text>
                         <Text style={styles.hintText}>
                             // DICA: {currentLevel.hint}
                         </Text>
                     </View>
 
-                    {/* Terminal de Código */}
                     <GameTerminal 
                         prefix={currentLevel.codePrefix}
                         suffix={currentLevel.codeSuffix}
@@ -76,7 +73,7 @@ export default function GameManager({ navigation }) {
                             />
                         ) : (
                             <TerminalButton 
-                                title="< ABORTAR" 
+                                title="< VOLTAR" 
                                 onPress={() => navigation.goBack()} 
                             />
                         )}
@@ -129,5 +126,3 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     }
 });
-
-

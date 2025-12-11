@@ -48,13 +48,11 @@ export default function HomeScreen({ navigation }) {
                         title="INICIAR_SISTEMA"
                         onPress={() => navigation.navigate('IniciarSistema')}
                     />
-
                     <TerminalButton
                         title="DADOS_DO_APP"
                         onPress={() => navigation.navigate('DadosApp')}
                     />
                 </View>
-
             </View>
         </Background>
     );

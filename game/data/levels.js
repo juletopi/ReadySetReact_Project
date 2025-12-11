@@ -1,4 +1,3 @@
-// lógica dos níveis aqui
 export const levels = [
     {
         id: 1,
@@ -11,7 +10,6 @@ export const levels = [
         type: "view"
     },
     {
-
         id: 2,
         title: "NAVEGAÇÃO",
         question: "Qual comando você usa para ir para outra tela?",
@@ -52,4 +50,3 @@ export const levels = [
         type: "animation"
     }
 ];
-
