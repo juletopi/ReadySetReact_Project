@@ -11,7 +11,7 @@ https://getemoji.com
 
 <div align="center">
    <a href="">
-      <img src="https://github.com/juletopi/ReadySetReact_Project/blob/master/assets/favicon.png" alt="ReadySetReact-Logo" width="230px" title="ReadySetReact Logo">
+      <img src="docs/logo.png" alt="ReadySetReact-Logo" width="230px" title="ReadySetReact Logo">
    </a>
    <h2 align="center">ReadySetReact</h2>
    <p align="center">
@@ -42,7 +42,7 @@ https://getemoji.com
 
 <div align="center">
    <p>
-      <img src="docs/intro.gif" alt="ReadySetReact GIF" style="max-width:60%; height:auto;" />
+      <img src="docs/intro.gif" alt="ReadySetReact GIF" width="350" style="display:block; margin:auto;" />
    </p>
 </div>
 
