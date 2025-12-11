@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import IniciarSistema from './screens/IniciarSistema';
 import DadosAppScreen from './screens/DadosAppScreen';
-// import GameManager from './src/game/GameManager';
+import GameManager from './game/GameManager';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,7 +28,7 @@ export default function App() {
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false, title: '< SYSTEM_ROOT />' }} />
-                <Stack.Screen name="IniciarSistema" component={IniciarSistema} options={{ headerShown: false, title: '< EXEC_GAME />' }} />
+                <Stack.Screen name="IniciarSistema" component={GameManager} options={{ headerShown: false, title: '< EXEC_GAME />' }} />
                 <Stack.Screen name="DadosApp" component={DadosAppScreen} options={{ headerShown: false, title: '< APP_DATA />' }} />
             </Stack.Navigator>
         </NavigationContainer>
