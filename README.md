@@ -34,8 +34,8 @@ https://getemoji.com
 <br>
 
 <div align="center">
-   <a href="#instalacao">Instalação</a> &#xa0; • &#xa0;
-   <a href="#licenca">Licença</a>
+   <a href="#instalação">Instalação</a> &#xa0; • &#xa0;
+   <a href="#licença">Licença</a>
 </div>
 
 ----
@@ -150,5 +150,5 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https
 ----
 
 <div align="center">
-   Feito com ❤️ e ☕ por <a href="https://github.com/juletopi">Juletopi</a> e <a href="https://github.com/rangelmarchiori">rangelmarchiori</a>.
+   Feito com ❤️ e ☕ por <a href="https://github.com/juletopi">Juletopi</a> e <a href="https://github.com/rangelmarchiori">RangelMarchiori</a>.
 </div>
